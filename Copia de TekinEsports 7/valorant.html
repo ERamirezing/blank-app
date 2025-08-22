@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tekin Esports - Valorant</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+  body {
+    background: url('./assets/img/11111.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .swiper.mySwiper {
+    height: 85vh;
+  }
+
+  .swiper-slide {
+    height: 75vh;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 2px solid #dc2626;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .swiper-slide .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.25); /* CORREGIDO: Menor opacidad */
+  }
+
+  .swiper-slide .content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+<!-- HEADER -->
+<header class="bg-black w-full py-6 border-b border-red-700 fixed top-0 left-0 z-50">
+  <div class="w-full flex items-center justify-between px-20">
+    <div class="flex items-center gap-2">
+      <img src="logo_tekin_final.png" alt="Tekin Logo" class="w-16 h-16 object-contain"/>
+      <span class="text-white font-extrabold text-xl">TEKIN ESPORTS</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-8 text-white text-lg font-semibold">
+      <a href="index.html" class="hover:text-red-500">INICIO</a>
+      <a href="equipos.html" class="text-red-500">EQUIPOS</a>
+      <a href="noticias.html" class="hover:text-red-500">NOTICIAS</a>
+      <a href="contacto.html" class="hover:text-red-500">CONTACTO</a>
+    </nav>
+  </div>
+</header>
+
+<!-- CONTENIDO -->
+<main class="pt-40 px-8">
+  <h1 class="text-4xl font-extrabold mb-6 text-center">Equipo Valorant</h1>
+  <p class="text-center text-red-400 mb-10">Conoce a nuestros jugadores activos del circuito LATAM Tier 3.</p>
+
+  <!-- Swiper Container -->
+  <div class="swiper mySwiper w-full px-4">
+    <div class="swiper-wrapper">
+
+      <!-- Jugador 1 - DEPZ -->
+      <div class="swiper-slide" style="background: url('./assets/img/Sova_Artwork_Full.webp') no-repeat center bottom; background-size: cover;">
+        <div class="overlay"></div>
+        <div class="content">
+          <h2 class="text-3xl font-extrabold tracking-wide text-red-500">DEPZ</h2>
+          <p class="text-sm italic mb-4">"Joaquín Ignacio Martínez De Oliveira"</p>
+          <div class="grid grid-cols-2 gap-4 text-left text-sm bg-black bg-opacity-60 p-4 rounded-lg">
+            <div><p class="text-gray-400">Edad:</p><p class="text-white font-bold">22 años</p></div>
+            <div><p class="text-gray-400">Nacionalidad:</p><p class="text-white font-bold">Uruguay</p></div>
+            <div><p class="text-gray-400">Rol:</p><p class="text-white font-bold">Player</p></div>
+            <div><p class="text-gray-400">Equipo:</p><p class="text-white font-bold">Valorant</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jugador 2 - Zagal -->
+      <div class="swiper-slide" style="background: url('./assets/img/Vyse_Artwork_Full.webp') no-repeat center bottom; background-size: cover;">
+        <div class="overlay"></div>
+        <div class="content">
+          <h2 class="text-3xl font-extrabold tracking-wide text-red-500">Zagal</h2>
+          <p class="text-sm italic mb-4">"Felipe Ignacio Zagal Rojas"</p>
+          <div class="grid grid-cols-2 gap-4 text-left text-sm bg-black bg-opacity-60 p-4 rounded-lg">
+            <div><p class="text-gray-400">Edad:</p><p class="text-white font-bold">22 años</p></div>
+            <div><p class="text-gray-400">Nacionalidad:</p><p class="text-white font-bold">Chile</p></div>
+            <div><p class="text-gray-400">Rol:</p><p class="text-white font-bold">Player</p></div>
+            <div><p class="text-gray-400">Equipo:</p><p class="text-white font-bold">Valorant</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jugador 3 - Teronew -->
+      <div class="swiper-slide" style="background: url('./assets/img/12345.jpg') no-repeat center bottom; background-size: cover;">
+        <div class="overlay"></div>
+        <div class="content">
+          <h2 class="text-3xl font-extrabold tracking-wide text-red-500">Teronew</h2>
+          <p class="text-sm italic mb-4">"Leandro Barrios"</p>
+          <div class="grid grid-cols-2 gap-4 text-left text-sm bg-black bg-opacity-60 p-4 rounded-lg">
+            <div><p class="text-gray-400">Edad:</p><p class="text-white font-bold">20 años</p></div>
+            <div><p class="text-gray-400">Nacionalidad:</p><p class="text-white font-bold">Argentina</p></div>
+            <div><p class="text-gray-400">Rol:</p><p class="text-white font-bold">Player</p></div>
+            <div><p class="text-gray-400">Equipo:</p><p class="text-white font-bold">Valorant</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jugador 4 - Kr1mn -->
+      <div class="swiper-slide" style="background: url('./assets/img/Sova_Artwork_Full.webp') no-repeat center bottom; background-size: cover;">
+        <div class="overlay"></div>
+        <div class="content">
+          <h2 class="text-3xl font-extrabold tracking-wide text-red-500">Kr1mn</h2>
+          <p class="text-sm italic mb-4">"Manuel Capeletti"</p>
+          <div class="grid grid-cols-2 gap-4 text-left text-sm bg-black bg-opacity-60 p-4 rounded-lg">
+            <div><p class="text-gray-400">Edad:</p><p class="text-white font-bold">23 años</p></div>
+            <div><p class="text-gray-400">Nacionalidad:</p><p class="text-white font-bold">Argentina</p></div>
+            <div><p class="text-gray-400">Rol:</p><p class="text-white font-bold">Player</p></div>
+            <div><p class="text-gray-400">Equipo:</p><p class="text-white font-bold">Valorant</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jugador 5 - Indexs -->
+      <div class="swiper-slide" style="background: url('./assets/img/Sova_Artwork_Full.webp') no-repeat center bottom; background-size: cover;">
+        <div class="overlay"></div>
+        <div class="content">
+          <h2 class="text-3xl font-extrabold tracking-wide text-red-500">Indexs</h2>
+          <p class="text-sm italic mb-4">"Bastián Felipe Gutiérrez Bizama"</p>
+          <div class="grid grid-cols-2 gap-4 text-left text-sm bg-black bg-opacity-60 p-4 rounded-lg">
+            <div><p class="text-gray-400">Edad:</p><p class="text-white font-bold">22 años</p></div>
+            <div><p class="text-gray-400">Nacionalidad:</p><p class="text-white font-bold">Chile</p></div>
+            <div><p class="text-gray-400">Rol:</p><p class="text-white font-bold">Player</p></div>
+            <div><p class="text-gray-400">Equipo:</p><p class="text-white font-bold">Valorant</p></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 3,
+    coverflowEffect: {
+      rotate: 20,
+      stretch: 0,
+      depth: 200,
+      modifier: 1,
+      slideShadows: true,
+    },
+  });
+</script>
+
+</body>
+</html>

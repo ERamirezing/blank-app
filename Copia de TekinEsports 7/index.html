@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tekin Esports</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+
+  <style>
+    .glow-text {
+      transition: text-shadow 0.3s ease;
+      position: relative;
+      z-index: 10;
+    }
+
+    .glow-text:hover {
+      text-shadow:
+        0 0 4px #ff0000,
+        0 0 8px #cc0000,
+        0 0 12px #990000;
+    }
+
+    #splash {
+      position: fixed;
+      background-color: black;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 50;
+    }
+
+    #splash img {
+      width: 400px;
+      animation: fadeOut 1s ease-in-out 2s forwards;
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+    
+  </style>
+</head>
+
+<body class="bg-black font-sans">
+
+<!-- Splash -->
+<div id="splash">
+  <img src="logo_splash_tekin.png" alt="Splash Logo Tekin">
+</div>
+
+<!-- NAVBAR -->
+<header class="bg-black w-full py-7 shadow-md fixed top-0 z-50 border border-red-600 rounded-sm">
+  <div class="w-full flex items-center justify-between px-20">
+    <!-- Logo + Marca -->
+    <div class="flex items-center gap-2">
+      <img src="q2.1.png" alt="Tekin Logo" class="w-30 h-21 object-contain"/>
+      <span class="text-white font-extrabold text-lg">Quantika</span>
+    </div>
+
+    <!-- Links -->
+    <nav class="hidden md:flex items-center gap-8 text-white text-lg font-semibold">
+      <a href="index.html" class="hover:text-fuchsia-500">INICIO</a>
+      <a href="noticias.html" class="hover:text-fuchsia-500">NOTICIAS</a>
+      <a href="equipos.html" class="hover:text-fuchsia-500">EQUIPOS</a>
+      <a href="klub.html" class="hover:text-fuchsia-500">KLUB</a>
+      <a href="estudios.html" class="hover:text-fuchsia-500">ESTUDIOS</a>
+      <a href="store.html" class="text-fuchsia-500">STORE</a>
+      <a href="contacto.html" class="hover:text-fuchsia-500">CONTACTO</a>
+    </nav>
+
+    <!-- Redes sociales -->
+    <div class="hidden md:flex items-center gap-4 text-white text-xl">
+      <a href="https://www.instagram.com/tekin__esports/" target="_blank" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitch.tv/tekin__esport_" target="_blank" class="hover:text-purple-500"><i class="fab fa-twitch"></i></a>
+      <a href="https://x.com/Tekin__Esport" target="_blank" class="hover:text-white"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.youtube.com/@TekinEsport" target="_blank" class="hover:text-red-600"><i class="fab fa-youtube"></i></a>
+      <a href="https://discord.gg/fh78wNek" target="_blank" class="hover:text-indigo-400"><i class="fab fa-discord"></i></a>
+      <a href="https://www.tiktok.com/@tekin._esports" target="_blank" class="hover:text-pink-400"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENIDO -->
+<main class="h-screen bg-black text-white relative pt-40 px-6 overflow-hidden" id="inicio">
+  <div class="flex flex-col md:flex-row items-center justify-center gap-10 animate-fade-in-up">
+
+    <!-- Personaje -->
+    <img src="./assets/img/tekin_transparent.png" alt="Personaje Tekin" class="max-h-[800px] w-auto hidden md:block"/>
+
+    <!-- Título y texto -->
+    <div class="text-center md:text-left max-w-xl">
+      <h1 class="text-[60px] md:text-[80px] lg:text-[100px] font-extrabold uppercase tracking-tight font-[Orbitron] glow-text hover-fire leading-tight">
+        <span class="text-white">T</span><span class="text-red-600">E</span><span class="text-white">K</span><span class="text-red-600">I</span><span class="text-white">N</span>
+        <span class="text-white">E</span><span class="text-red-600">S</span><span class="text-white">P</span><span class="text-red-600">O</span><span class="text-white">R</span><span class="text-red-600">T</span><span class="text-white">S</span>
+      </h1>
+
+      <!-- Lema -->
+      <p class="text-gray-300 text-lg mt-4 italic">
+        Dominando el fuego del Tier 3 LATAM
+      </p>
+
+      <!-- Botón CTA -->
+      <a href="equipos.html"
+         class="mt-6 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded shadow-lg transition">
+         CONOCE AL EQUIPO
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Flecha scroll-down -->
+  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <a href="#contenido"><img src="./assets/icons/arrow_down.svg" alt="Scroll" class="w-6 h-6"/></a>
+  </div>
+</main>
+
+<script>
+  setTimeout(() => {
+    const splash = document.getElementById('splash');
+    splash.style.display = 'none';
+  }, 2000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tekin Esports</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    #splash {
+      position: fixed;
+      background-color: black;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 50;
+    }
+    #splash img {
+      width: 250px;
+      animation: fadeOut 1s ease-in-out 1s forwards;
+    }
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+  </style>
+</head>
+<body class="bg-black font-sans">
+
+<!-- Splash -->
+<div id="splash">
+  <img src="logo_splash_tekin.png" alt="Splash Logo Tekin">
+</div>
+
+<!-- NAVBAR -->
+<header class="bg-black w-full py-6 shadow-md fixed top-0 z-50 border border-red-600 rounded-sm">
+  <div class="w-full flex items-center justify-between px-20">
+    <!-- Logo + Marca -->
+    <div class="logo-titulo flex items-center gap-2 justify-start">
+      <img src="logo_tekin_final.png" alt="Tekin Logo" class="w-20 h-20 object-contain"/>
+      <span class="text-white font-extrabold text-lg">TEKIN ESPORTS</span>
+    </div>
+    <!-- Links -->
+    <nav class="hidden md:flex items-center gap-8 text-white text-lg font-semibold">
+      <a href="index.html" class="hover:text-fuchsia-500">INICIO</a>
+      <a href="noticias.html" class="hover:text-fuchsia-500">NOTICIAS</a>
+      <a href="equipos.html" class="hover:text-fuchsia-500">EQUIPOS</a>
+      <a href="klub.html" class="hover:text-fuchsia-500">KLUB</a>
+      <a href="estudios.html" class="hover:text-fuchsia-500">ESTUDIOS</a>
+      <a href="store.html" class="text-fuchsia-500">STORE</a>
+    <a href="contacto.html" class="hover:text-fuchsia-500">CONTACTO</a></nav>
+    <!-- Redes sociales íconos individuales -->
+<div class="hidden md:flex items-center gap-4 text-white text-xl">
+  <a href="https://www.instagram.com/tekin__esports/" target="_blank" aria-label="Instagram" class="hover:text-pink-500 transition duration-300">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.twitch.tv/tekin__esport_" target="_blank" aria-label="Twitch" class="hover:text-purple-500 transition duration-300">
+    <i class="fab fa-twitch"></i>
+  </a>
+  <a href="https://x.com/Tekin__Esport" target="_blank" aria-label="X" class="hover:text-white transition duration-300">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+  <a href="https://www.youtube.com/@TekinEsport" target="_blank" aria-label="YouTube" class="hover:text-red-600 transition duration-300">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://discord.gg/fh78wNek" target="_blank" aria-label="Discord" class="hover:text-indigo-400 transition duration-300">
+    <i class="fab fa-discord"></i>
+  </a>
+  <a href="https://www.tiktok.com/@tekin._esports" target="_blank" aria-label="TikTok" class="hover:text-pink-400 transition duration-300">
+    <i class="fab fa-tiktok"></i>
+  </a>
+</div>
+</header>
+
+<!-- CONTENIDO -->
+
+<main class="min-h-screen flex flex-col justify-center items-center text-center px-8 text-red-500 relative z-0">
+  <h1 class="text-white text-4xl font-bold mb-6">Tekin Studios</h1>
+  
+        <p class="mb-4">📹 Nuestro espacio multimedia para producción de contenido: streams, documentales de jugadores, behind-the-scenes y análisis tácticos.</p>
+        <p>🎙️ ¡Síguenos en YouTube y Twitch para ver lo que pasa detrás de las partidas!</p>
+        
+
+<div class="flex flex-wrap justify-center gap-6 mt-8">
+  <img src="assets/img/estudio_1.jpg" alt="Estudio 1" class="w-80 rounded-lg shadow-md">
+  <img src="assets/img/estudio_2.jpg" alt="Estudio 2" class="w-80 rounded-lg shadow-md">
+  <img src="assets/img/estudio_3.jpg" alt="Estudio 3" class="w-80 rounded-lg shadow-md">
+</div>
+
+</main>
+
+
+<script>
+  setTimeout(() => {
+    const splash = document.getElementById('splash');
+    splash.style.display = 'none';
+  }, 2000);
+</script>
+
+</body>
+</html>
